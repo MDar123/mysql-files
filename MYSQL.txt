@@ -1,0 +1,37 @@
+
+-- create
+CREATE TABLE Office (
+roll_no numeric , name varchar(255) , age numeric , dept varchar(255) , city varchar(255)
+);
+
+insert INTO Office(roll_no,name,age,dept,city) Values(1001,'Ali',18,'CSE','Lahore'),(1001,'Ali',18,'CSE','Lahore'),(1002,'babr',28,'BSE','Lahore'),(1003,'asad',68,'BSE','Lahore'),(1004,'Ali',18,'de','Lahore'),(1005,'taha',23,'CE','Lahore'),(1006,'muneeb',28,'SE','Lahore');
+
+-- printitng all rows and cols 
+select * from Office;
+-- using Distinct
+select Distinct name,roll_no from Office;
+
+-- using count 
+
+select count(age) from Office;
+
+-- Using count with disticnt
+
+select count(Distinct age) from Office;
+
+-- using limit in replace of limit
+
+select * from Office limit 2;
+
+-- using limit from start to end
+select name from Office limit 2,2;
+
+-- select Distinct * FROM Office where  age>18;
+
+-- using clauses 
+
+-- select * from Office where name in ('babr','asad');
+
+
+-- select * from Office where roll_no in (1001,1005);
+
